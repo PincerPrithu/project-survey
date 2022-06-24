@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    padding: 5%;
+}
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  margin: 1%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 2%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Fill out this form as a survey about what E-Commerce platform you use and how they have helped you.</h2>
+<p>This form is designed mobile first.</p>
+
+<div class="container">
+  <form accept-charset="UTF-8" action="https://www.formbackend.com/f/d8ae943a9a801bd6" method="POST">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="optiona">Do you prefer E-Commerce over going to a shop?</label>
+      </div>
+
+      <div class="col-75">
+        <select id="optiona" name="optiona">
+            <option value="Yes">Yes, E-Commerce is better!</option>
+            <option value="No">No, I prefer going to a physical shop.</option>
+          </select>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25">
+        <label for="region">Region</label>
+      </div>
+      <div class="col-75">
+        <select id="region" name="region">
+          <option value="NCR">Delhi / NCR</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-25">
+          <label for="10m-service">What 10 Min Delivery service do you prefer?</label>
+        </div>
+        <div class="col-75">
+          <select id="10m-service" name="10m-service">
+            <option value="Zepto">Zepto</option>
+            <option value="Amazon">Amazon Pantry</option>
+            <option value="Grofers">BlinkIt (fomerly Grofers)</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="normal-ecom">Which mass E-Commerce platform do you use?</label>
+        </div>
+        <div class="col-75">
+          <select id="10m-service" name="10m-service">
+            <option value="Zepto">Amazon</option>
+            <option value="Grofers">Flipkart</option>
+            <option value="Snapdeal">Snapdeal</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="food-delivery">Which online food delivery app do you use?</label>
+        </div>
+        <div class="col-75">
+          <select id="food-delivery" name="food-delivery">
+            <option value="Zomato">Zomato</option>
+            <option value="Swiggy">Swiggy</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="summary">Do you think that E-Commerce duopolies have made your life better?</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="summary" name="summary" placeholder="Your opinion..">
+        </div>
+      </div>
+
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
